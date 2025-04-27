@@ -92,6 +92,8 @@ export default function InfiniteCanvas() {
   const navigate = useNavigate();
   const [isAnimationOpen, setIsAnimationOpen] = useState(false);
   const [animations, setAnimations] = useState([]);
+  const [showWelcomePopup, setShowWelcomePopup] = useState(true);
+
   const animationFrameRef = useRef(null);
 
   const email = useSelector((state) => state.user.userEmail);
@@ -135,6 +137,20 @@ export default function InfiniteCanvas() {
       fs: 1,
       origin: window.location.origin,
     },
+  };
+
+  useEffect(() => {
+    setShowWelcomePopup(true);
+  }, []);
+  
+  // Add this function to handle email click
+  const handleEmailClick = () => {
+    window.location.href = "mailto:imaginationbookpvtltd@gmail.com";
+  };
+  
+  // Add this function to handle WhatsApp click
+  const handleWhatsAppClick = () => {
+    window.location.href = "https://wa.me/919339669870";
   };
 
   // Load cartoon images
@@ -1654,6 +1670,85 @@ export default function InfiniteCanvas() {
           </div>
         </div>
       )}
+
+{showWelcomePopup && (
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm">
+    <div className="relative w-full max-w-2xl p-8 bg-white shadow-2xl rounded-2xl animate-fade-in">
+      {/* Rainbow Border */}
+      <div className="absolute inset-0 border-4 border-transparent rounded-2xl animate-rainbow-border"></div>
+      
+      <div className="relative space-y-6">
+        {/* Header */}
+        <h2 className="text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+          🎨 Welcome to ImaginationBook! 🎨
+        </h2>
+
+        {/* Image Generation Info */}
+        <div className="p-6 space-y-3 bg-purple-50 rounded-xl">
+          <p className="flex items-center text-lg font-medium text-purple-800">
+            <span className="mr-2">🖥️</span>
+            You can generate images 30 hours every week!
+          </p>
+          <p className="flex items-center text-lg font-medium text-purple-800">
+            <span className="mr-2">🕕</span>
+            Available Daily: 6:00 PM – 9:00 PM
+            </p>
+        </div>
+
+        {/* Benefits */}
+        <div className="space-y-2">
+          <p className="flex items-center text-lg text-green-600">
+            <span className="mr-2">✅</span>
+            Create stunning images during these hours
+          </p>
+          <p className="flex items-center text-lg text-green-600">
+            <span className="mr-2">✅</span>
+            GPU power is reserved just for you — no waiting!
+          </p>
+        </div>
+
+        {/* Contact Section */}
+        <div className="p-6 space-y-4 bg-blue-50 rounded-xl">
+          <p className="text-lg font-semibold text-blue-800">
+            You can connect with us whenever you want to create images, ping us by email or WhatsApp...
+          </p>
+          <div className="flex justify-center space-x-4">
+            <button
+              onClick={handleEmailClick}
+              className="flex items-center px-6 py-3 space-x-2 text-white transition-transform bg-purple-600 rounded-lg hover:bg-purple-700 hover:scale-105"
+            >
+              <span>📧</span>
+              <span>Email Us</span>
+            </button>
+            <button
+              onClick={handleWhatsAppClick}
+              className="flex items-center px-6 py-3 space-x-2 text-white transition-transform bg-green-500 rounded-lg hover:bg-green-600 hover:scale-105"
+            >
+              <span>💬</span>
+              <span>WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+        {/* Action Buttons */}
+        <div className="flex justify-center pt-4 space-x-4">
+          <button
+            onClick={() => setShowWelcomePopup(false)}
+            className="px-8 py-3 text-lg font-bold text-white transition-all transform rounded-full bg-gradient-to-r from-purple-500 to-pink-500 hover:scale-105 hover:shadow-lg active:scale-95"
+          >
+            Let's Create! ✨
+          </button>
+          <button
+            onClick={() => setShowWelcomePopup(false)}
+            className="px-8 py-3 text-lg font-bold text-purple-700 transition-all transform bg-white border-2 border-purple-500 rounded-full hover:scale-105 hover:shadow-lg active:scale-95"
+          >
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
     </div>
   );
 }
