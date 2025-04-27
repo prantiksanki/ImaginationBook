@@ -1,138 +1,189 @@
+
+
 ![github-submission-banner](https://github.com/user-attachments/assets/a1493b84-e4e2-456e-a791-ce35ee2bcf2f)
 
-# 🚀 Project Title
+# 🚀 <a href="https://imaginationbook-5d4r.onrender.com">ImaginationBook</a>
 
-> A one-line tagline or mission statement for your project.
+> **Empowering children's creativity — turning their imagination into magical realities through AI.**
 
----
+----------
 
 ## 📌 Problem Statement
 
-Select the problem statement number and title from the official list given in Participant Manual.
+**Problem Statement 1 – Weave AI magic with Groq**
 
-**Example:**  
-**Problem Statement 7 – Transform the Future of Rural Commerce**
-
----
+----------
 
 ## 🎯 Objective
 
-What problem does your project solve, and who does it serve?  
-Briefly describe the real-world use case and the value it provides.
+While much attention is focused on the future of AI, we believe the real future lies with our children.  
+**ImaginationBook** is a creative canvas where children can draw, write, and recite freely. Instead of simply prompting AI, they _create_ — and our advanced AI brings their amateur work to life by generating rich, beautiful images from their imagination.  
+We empower kids to become creators, not just users.
 
----
+----------
 
 ## 🧠 Team & Approach
 
-### Team Name:  
-`Your team name here`
+### Team Name:
 
-### Team Members:  
-- Name 1 (GitHub / LinkedIn / Role)  
-- Name 2  
-- Name 3  
-*(Add links if you want)*
+`SERP`
 
-### Your Approach:  
-- Why you chose this problem  
-- Key challenges you addressed  
-- Any pivots, brainstorms, or breakthroughs during hacking  
+### Team Members:
 
----
+-   **Prantik Sanki** (Full Stack Developer)
+    
+-   **Soham Pahari** (AI Developer)
+    
+
+### Our Approach:
+
+-   We chose this problem because fostering creativity at a young age is crucial for building a better, more innovative future.
+    
+-   Key challenges we addressed:
+    
+    -   Handling multiple API keys simultaneously
+        
+    -   Building a safe, intuitive, and child-friendly UI
+        
+    -   Setting up efficient real-time image generation from inputs
+        
+-   Major breakthroughs:
+    
+    -   Seamlessly connecting freeform child inputs to visual outputs using a lightweight AI pipeline.
+    
+-   Limitations:
+    
+    -   Due to GPU use limit, we can use GPU for a short time each day.
+
+
+
+----------
 
 ## 🛠️ Tech Stack
 
 ### Core Technologies Used:
-- Frontend:
-- Backend:
-- Database:
-- APIs:
-- Hosting:
 
-### Sponsor Technologies Used (if any):
-- [ ] **Groq:** _How you used Groq_  
-- [ ] **Monad:** _Your blockchain implementation_  
-- [ ] **Fluvio:** _Real-time data handling_  
-- [ ] **Base:** _AgentKit / OnchainKit / Smart Wallet usage_  
-- [ ] **Screenpipe:** _Screen-based analytics or workflows_  
-- [ ] **Stellar:** _Payments, identity, or token usage_
-*(Mark with ✅ if completed)*
----
+-   **Frontend:** React.js, Rough.js
+    
+-   **Backend:** Node.js, Flask (Python)
+    
+-   **Database:** MongoDB
+    
+-   **APIs:** Groq, Notifies, React YouTube
+    
+-   **Hosting:** Ngrok (for tunneling) and render.com (Cloud Deployment) 
+    
+
+### Sponsor Technologies Used:
+
+-   **Groq**
+    
+
+----------
 
 ## ✨ Key Features
 
-Highlight the most important features of your project:
+-   ✅ **Multi-modal Creation:** Children can draw, write, or even recite audio.
+    
+-   ✅ **AI Magic:** Instant AI-generated visuals from amateur inputs.
+    
+-   ✅ **Child-Safe, Intuitive UI:** Built specifically for young users to navigate easily.
+    
+-   ✅ **Seamless API Integration:** Real-time creative feedback and artwork generation.
+    
 
-- ✅ Feature 1  
-- ✅ Feature 2  
-- ✅ Feature 3  
-- ✅ Feature 4  
+![Image](https://github.com/user-attachments/assets/1610c3fa-4774-4cb1-9fde-846c9e89cf21)
 
-Add images, GIFs, or screenshots if helpful!
-
----
+----------
 
 ## 📽️ Demo & Deliverables
 
-- **Demo Video Link:** [Paste YouTube or Loom link here]  
-- **Pitch Deck / PPT Link:** [Paste Google Slides / PDF link here]  
+-   **Demo Video Link:** https://youtu.be/NmA61h9nU1o
+    
+-   **PPT Link:** [Paste Google Slides / PDF link here]
+    
 
----
+----------
 
 ## ✅ Tasks & Bonus Checklist
 
-- [ ] **All members of the team completed the mandatory task - Followed at least 2 of our social channels and filled the form** (Details in Participant Manual)  
-- [ ] **All members of the team completed Bonus Task 1 - Sharing of Badges and filled the form (2 points)**  (Details in Participant Manual)
-- [ ] **All members of the team completed Bonus Task 2 - Signing up for Sprint.dev and filled the form (3 points)**  (Details in Participant Manual)
+-   **All team members followed two social channels and filled the form**
+    
+-   **Bonus Task 1 completed (Badge Sharing)**
+    
+-   **Bonus Task 2 completed (Sprint.dev signup)**
+    
 
-*(Mark with ✅ if completed)*
-
----
+----------
 
 ## 🧪 How to Run the Project
 
 ### Requirements:
-- Node.js / Python / Docker / etc.
-- API Keys (if any)
-- .env file setup (if needed)
+
+-   Node.js
+    
+-   Python
+    
+-   MongoDB
+    
+-   Ngrok
+    
+-   API Keys for Groq and other services
+    
+-   `.env` setup for keys and server config
+    
 
 ### Local Setup:
+
 ```bash
 # Clone the repo
-git clone https://github.com/your-team/project-name
+git clone https://github.com/prantiksanki/ImaginationBook
 
-# Install dependencies
-cd project-name
+# Frontend setup
+cd frontend
 npm install
-
-# Start development server
 npm run dev
+
+# Backend setup
+cd backend
+pip install -r requirements.txt
+python app.py
+
 ```
 
-Provide any backend/frontend split or environment setup notes here.
-
----
+----------
 
 ## 🧬 Future Scope
 
-List improvements, extensions, or follow-up features:
+-   📈 Expand integrations with more creative APIs (like voice-to-story)
+    
+-   🛡️ Enhance moderation and child safety layers
+    
+-   🎨 Introduce AI-enhanced animations or short movies from kids' stories
+    
 
-- 📈 More integrations  
-- 🛡️ Security enhancements  
-- 🌐 Localization / broader accessibility  
-
----
+----------
 
 ## 📎 Resources / Credits
 
-- APIs or datasets used  
-- Open source libraries or tools referenced  
-- Acknowledgements  
+-   Groq AI
+    
+-   Rough.js for freeform sketching
+    
+-   Flask + Ngrok for backend tunneling
+    
+-   Diffusers
+    
+-   Torch for AI model support
 
----
+- Google Kaggle for GPU
+    
+
+----------
 
 ## 🏁 Final Words
 
-Share your hackathon journey — challenges, learnings, fun moments, or shout-outs!
+This project was a deeply rewarding experience. Building something for the next generation of creators pushed us to think beyond traditional apps — focusing on intuitive design, ethics, and magic.  
+Huge shoutout to our mentors, the hackathon community, and our ever-growing imagination!
 
----
+----------

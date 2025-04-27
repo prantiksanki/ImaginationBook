@@ -1553,12 +1553,7 @@ export default function InfiniteCanvas() {
             >
               🖌️ Picture
             </button>
-            {/* <button
-              className="block w-full px-6 py-3 mb-2 text-base font-bold text-indigo-800 transition rounded-xl hover:bg-indigo-100"
-              onClick={() => handleMagicOption("Make Video")}
-            >
-              📹 Video
-            </button> */}
+            
             <button
               className="block w-full px-6 py-3 mb-2 text-base font-bold text-indigo-800 transition rounded-xl hover:bg-indigo-100"
               onClick={() => handleMagicOption("Make Animation")}
