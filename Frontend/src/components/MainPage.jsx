@@ -352,7 +352,9 @@ const featured =
                   Welcome, Space Explorer! <Sparkles className="ml-2 text-yellow-300 animate-pulse" size={24} />
                 </h1>
                 <p className="mb-4 text-lg">Ready to blast off into a galaxy of imagination?</p>
-                <button className="flex items-center px-8 py-3 font-bold text-purple-600 transition-all transform bg-white rounded-full shadow-lg hover:shadow-xl hover:scale-105">
+                <button className="flex items-center px-8 py-3 font-bold text-purple-600 transition-all transform bg-white rounded-full shadow-lg hover:shadow-xl hover:scale-105"
+                onClick={() => navigate('/board1')}
+                >
                   <Zap className="mr-2" size={18} />
                   Start Creating
                 </button>
