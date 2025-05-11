@@ -18,17 +18,18 @@ export default function ImaginationBookHome() {
   const [error, setError] = useState('');
 
   const shouldShowAlert = () => {
-    const lastShownDate = localStorage.getItem('lastAlertShown');
-    const today = new Date().toDateString();
+    const lastShownTimestamp = localStorage.getItem('lastAlertShown');
+    const now = new Date().getTime();
     
-    if (!lastShownDate || lastShownDate !== today) {
-      localStorage.setItem('lastAlertShown', today);
+    // If never shown before or last shown more than 24 hours ago
+    if (!lastShownTimestamp || (now - parseInt(lastShownTimestamp)) > 24 * 60 * 60 * 1000) {
+      localStorage.setItem('lastAlertShown', now.toString());
       return true;
     }
     return false;
   };
 
-  const [showAlert, setShowAlert] = useState(shouldShowAlert());
+  const [showAlert, setShowAlert] = useState(false);
 
   const email = useSelector((state) => state.user?.userEmail)
   const password = useSelector((state) => state.user?.userPassword);
@@ -72,7 +73,8 @@ const featured =
   }, []);
 
   useEffect(() => {
-    setShowAlert(shouldShowAlert());
+    const showAlertNow = shouldShowAlert();
+    setShowAlert(showAlertNow);
   }, []);
 
   // Sample draft data

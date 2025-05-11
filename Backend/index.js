@@ -318,9 +318,8 @@ app.get("/api/drawings/:id/:email", async (req, res) => {
   }
 });
 
-app.get("/api/draft" ,async (req,res) =>
-{
-  const { email } = req.query;
+app.get("/api/drawings/:email", async (req, res) => {
+  const { email } = req.params;
 
   if (!email) {
     return res.status(400).json({ error: 'Email is required' });
@@ -333,7 +332,8 @@ app.get("/api/draft" ,async (req,res) =>
     console.error(err);
     res.status(500).json({ error: 'Server error while fetching drafts' });
   }
-})
+});
+
 
 
 
