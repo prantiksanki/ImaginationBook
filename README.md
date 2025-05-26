@@ -1,6 +1,5 @@
 
 
-![github-submission-banner](https://github.com/user-attachments/assets/a1493b84-e4e2-456e-a791-ce35ee2bcf2f)
 
 # 🚀 <a href="https://imaginationbook-5d4r.onrender.com">ImaginationBook</a>
 
@@ -8,11 +7,6 @@
 
 ----------
 
-## 📌 Problem Statement
-
-**Problem Statement 1 – Weave AI magic with Groq**
-
-----------
 
 ## 🎯 Objective
 
@@ -22,42 +16,6 @@ We empower kids to become creators, not just users.
 
 ----------
 
-## 🧠 Team & Approach
-
-### Team Name:
-
-`SERP`
-
-### Team Members:
-
--   **Prantik Sanki** (Full Stack Developer)
-    
--   **Soham Pahari** (AI Developer)
-    
-
-### Our Approach:
-
--   We chose this problem because fostering creativity at a young age is crucial for building a better, more innovative future.
-    
--   Key challenges we addressed:
-    
-    -   Handling multiple API keys simultaneously
-        
-    -   Building a safe, intuitive, and child-friendly UI
-        
-    -   Setting up efficient real-time image generation from inputs
-        
--   Major breakthroughs:
-    
-    -   Seamlessly connecting freeform child inputs to visual outputs using a lightweight AI pipeline.
-    
--   Limitations:
-    
-    -   Due to GPU use limit, we can use GPU for a short time each day.
-
-
-
-----------
 
 ## 🛠️ Tech Stack
 
@@ -72,11 +30,6 @@ We empower kids to become creators, not just users.
 -   **APIs:** Groq, Notifies, React YouTube
     
 -   **Hosting:** Ngrok (for tunneling) and render.com (Cloud Deployment) 
-    
-
-### Sponsor Technologies Used:
-
--   **Groq**
     
 
 ----------
@@ -99,20 +52,7 @@ We empower kids to become creators, not just users.
 ## 📽️ Demo & Deliverables
 
 -   **Demo Video Link:** https://youtu.be/NmA61h9nU1o
-    
--   **PPT Link:** [Paste Google Slides / PDF link here]
-    
-
-----------
-
-## ✅ Tasks & Bonus Checklist
-
--   **All team members followed two social channels and filled the form**
-    
--   **Bonus Task 1 completed (Badge Sharing)**
-    
--   **Bonus Task 2 completed (Sprint.dev signup)**
-    
+        
 
 ----------
 
